@@ -12,7 +12,9 @@ if (MSVC)
                         -W4
                         -EHsc
                         -D_CRT_SECURE_NO_WARNINGS
-                        -DSTRICT)
+                        -DSTRICT
+                        -DUNICODE
+                        -D_UNICODE)
 else()
     # fail until we target more platforms
     message(FATAL_ERROR "compiler not supported")
