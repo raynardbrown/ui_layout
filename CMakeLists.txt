@@ -5,7 +5,7 @@ project(ui_layout)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
-add_library(${PROJECT_NAME} src/RowLayout.cpp)
+set(Sources src/RowLayout.cpp)
 
 if (MSVC)
     add_compile_options(-Zi 
@@ -19,3 +19,5 @@ else()
     # fail until we target more platforms
     message(FATAL_ERROR "compiler not supported")
 endif()
+
+add_library(${PROJECT_NAME} ${Sources})
