@@ -3,7 +3,8 @@ cmake_minimum_required(VERSION 3.15.5)
 # Set the name of the project and store it in a variable PROJECT_NAME
 project(ui_layout)
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
+set(Headers "")
+list(APPEND Headers ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 set(Sources src/RowLayout.cpp)
 
@@ -21,3 +22,5 @@ else()
 endif()
 
 add_library(${PROJECT_NAME} ${Sources})
+
+target_include_directories(${PROJECT_NAME} PRIVATE ${Headers})
