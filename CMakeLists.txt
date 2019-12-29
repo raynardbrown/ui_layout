@@ -6,7 +6,7 @@ project(ui_layout)
 set(Headers "")
 list(APPEND Headers ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
-set(Sources src/RowLayout.cpp)
+set(Sources src/ui/layout/RowLayout.cpp)
 
 if (MSVC)
     add_compile_options(-Zi 
