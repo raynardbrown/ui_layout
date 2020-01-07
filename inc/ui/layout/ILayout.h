@@ -13,6 +13,8 @@
 #ifndef INC_ILAYOUT_H_
 #define INC_ILAYOUT_H_
 
+class UiComponent;
+
 class ILayout
 {
   protected:
@@ -29,7 +31,7 @@ class ILayout
 
     }
 
-    virtual void executeLayout() = 0;
+    virtual void executeLayout(UiComponent * uiComponent) = 0;
 };
 
 #endif /* INC_ILAYOUT_H_ */
