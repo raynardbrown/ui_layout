@@ -10,8 +10,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef INC_ILAYOUT_H_
-#define INC_ILAYOUT_H_
+#ifndef UI_LAYOUT_ILAYOUT_H_
+#define UI_LAYOUT_ILAYOUT_H_
 
 class UiComponent;
 
@@ -33,5 +33,4 @@ class ILayout
 
     virtual void executeLayout(UiComponent * uiComponent) = 0;
 };
-
-#endif /* INC_ILAYOUT_H_ */
+#endif /* UI_LAYOUT_ILAYOUT_H_ */
