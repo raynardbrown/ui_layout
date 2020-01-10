@@ -10,8 +10,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef PADDING_H_
-#define PADDING_H_
+#ifndef UI_LAYOUT_PADDING_H_
+#define UI_LAYOUT_PADDING_H_
 
 struct Padding
 {
@@ -20,4 +20,4 @@ struct Padding
     int topPadding;
     int bottomPadding;
 };
-#endif /* PADDING_H_ */
+#endif /* UI_LAYOUT_PADDING_H_ */
