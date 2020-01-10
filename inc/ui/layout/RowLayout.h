@@ -13,10 +13,18 @@
 #ifndef UI_LAYOUT_ROWLAYOUT_H_
 #define UI_LAYOUT_ROWLAYOUT_H_
 
-class RowLayout
+#include "ui/layout/ILayout.h"
+
+class UiComponent;
+
+class RowLayout : public ILayout
 {
   public:
+
     RowLayout();
+
     virtual ~RowLayout();
+
+    virtual void executeLayout(UiComponent * uiComponent);
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
