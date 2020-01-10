@@ -10,8 +10,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef MARGIN_H_
-#define MARGIN_H_
+#ifndef UI_LAYOUT_MARGIN_H_
+#define UI_LAYOUT_MARGIN_H_
 
 struct Margin
 {
@@ -20,4 +20,4 @@ struct Margin
     int topMargin;
     int bottomMargin;
 };
-#endif /* MARGIN_H_ */
+#endif /* UI_LAYOUT_MARGIN_H_ */
