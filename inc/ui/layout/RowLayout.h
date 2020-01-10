@@ -10,8 +10,8 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef ROWLAYOUT_H_
-#define ROWLAYOUT_H_
+#ifndef UI_LAYOUT_ROWLAYOUT_H_
+#define UI_LAYOUT_ROWLAYOUT_H_
 
 class RowLayout
 {
@@ -19,4 +19,4 @@ class RowLayout
     RowLayout();
     virtual ~RowLayout();
 };
-#endif /* ROWLAYOUT_H_ */
+#endif /* UI_LAYOUT_ROWLAYOUT_H_ */
