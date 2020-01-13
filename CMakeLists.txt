@@ -23,7 +23,8 @@ if (MSVC)
                         -D_CRT_SECURE_NO_WARNINGS
                         -DSTRICT
                         -DUNICODE
-                        -D_UNICODE)
+                        -D_UNICODE
+                        -DNOMINMAX)
 
     set(Sources_Windows src/ui/layout/windows/UiComponentSize.cpp)
     
