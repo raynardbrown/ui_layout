@@ -16,11 +16,13 @@
 class UiComponent;
 class Label;
 struct UiComponentConstraints;
+struct UiComponentInternals;
 
 struct UiComponentWrapper
 {
     UiComponent * uiComponent;
     Label * labelPeer;
     UiComponentConstraints * uiComponentConstraints;
+    UiComponentInternals * uiComponentInternals;
 };
 #endif /* UI_LAYOUT_PRIVATE_UICOMPONENTWRAPPER_H_ */
