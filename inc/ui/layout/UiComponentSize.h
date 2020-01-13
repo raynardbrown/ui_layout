@@ -24,5 +24,7 @@ class UiComponentSize
     static int getButtonWidth();
 
     static int getButtonHeight();
+
+    static int getLabelHeight();
 };
 #endif /* UI_LAYOUT_UICOMPONENTSIZE_H_ */
