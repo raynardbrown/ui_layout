@@ -15,7 +15,7 @@
 
 class UiComponent;
 class Label;
-class UiComponentConstraints;
+struct UiComponentConstraints;
 
 struct UiComponentWrapper
 {
