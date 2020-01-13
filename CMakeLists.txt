@@ -42,6 +42,14 @@ endif()
 
 list(APPEND Headers ${UI_INCLUDE})
 
+find_path(GRAPHICS_INCLUDE NAMES graphics/Font.h PATH_SUFFIXES graphics/inc)
+
+if(NOT GRAPHICS_INCLUDE)
+  message(FATAL_ERROR "graphics headers not found")
+endif()
+
+list(APPEND Headers ${GRAPHICS_INCLUDE})
+
 add_library(${PROJECT_NAME} ${Sources})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${Headers})
