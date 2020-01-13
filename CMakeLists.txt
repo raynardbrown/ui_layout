@@ -34,6 +34,14 @@ else()
     message(FATAL_ERROR "compiler not supported")
 endif()
 
+find_path(UI_INCLUDE NAMES ui/Window.h PATH_SUFFIXES ui/inc)
+
+if(NOT UI_INCLUDE)
+  message(FATAL_ERROR "ui headers not found")
+endif()
+
+list(APPEND Headers ${UI_INCLUDE})
+
 add_library(${PROJECT_NAME} ${Sources})
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${Headers})
