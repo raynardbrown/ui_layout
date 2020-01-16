@@ -14,6 +14,7 @@
 #define UI_LAYOUT_UICOMPONENTCONSTRAINTS_H_
 
 #include "ui/layout/LabelOrientation.h"
+#include "ui/layout/LabelVerticalAlignment.h"
 
 struct UiComponentConstraints
 {
@@ -49,6 +50,18 @@ struct UiComponentConstraints
      * The default value is LabelOrientation::LeftOrientation.
      */
     LabelOrientation::Value labelOrientation;
+
+    /**
+     * The vertical location where a label will reside relative to its
+     * associated UiComponent. This value is only valid when the UiComponent
+     * associated with the label has a UiComponentConstraints::labelOrientation
+     * of LabelOrientation::LeftOrientation or
+     * LabelOrientation::RightOrientation.
+     *
+     *
+     * The default value is LabelVerticalAlignment::TopAlignment.
+     */
+    LabelVerticalAlignment::Value labelVerticalAlignment;
 
     /**
      * Controls how much a UiComponent grows. The default 0 means a
