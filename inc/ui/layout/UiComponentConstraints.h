@@ -70,4 +70,7 @@ struct UiComponentConstraints
     int growX;
     int growY;
 };
+
+void initUiComponentConstraints(UiComponentConstraints * uiComponentConstraints);
+
 #endif /* UI_LAYOUT_UICOMPONENTCONSTRAINTS_H_ */
