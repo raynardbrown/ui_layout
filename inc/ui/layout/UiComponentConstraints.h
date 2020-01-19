@@ -73,4 +73,7 @@ struct UiComponentConstraints
 
 void initUiComponentConstraints(UiComponentConstraints * uiComponentConstraints);
 
+void copyUiComponentConstraints(UiComponentConstraints * destination,
+                                const UiComponentConstraints * source);
+
 #endif /* UI_LAYOUT_UICOMPONENTCONSTRAINTS_H_ */
