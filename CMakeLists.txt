@@ -14,7 +14,8 @@ list(APPEND Headers ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 list(APPEND Headers ${CMAKE_CURRENT_SOURCE_DIR}/src)  # private headers
 list(APPEND Headers ${Boost_INCLUDE_DIRS})
 
-set(Sources src/ui/layout/RowLayout.cpp)
+set(Sources src/ui/layout/RowLayout.cpp
+            src/ui/layout/UiComponentConstraints.cpp)
 
 if (MSVC)
     add_compile_options(-Zi 
