@@ -24,3 +24,17 @@ void initUiComponentConstraints(UiComponentConstraints * uiComponentConstraints)
   uiComponentConstraints->growX = 0;
   uiComponentConstraints->growY = 0;
 }
+
+void copyUiComponentConstraints(UiComponentConstraints * destination,
+                                const UiComponentConstraints * source)
+{
+  destination->sizeGroupId = source->sizeGroupId;
+  destination->labelSizeGroupId = source->labelSizeGroupId;
+  destination->horizontalGapLeft = source->horizontalGapLeft;
+  destination->horizontalGapRight = source->horizontalGapRight;
+  destination->labelOrientation = source->labelOrientation;
+  destination->labelVerticalAlignment = source->labelVerticalAlignment;
+
+  destination->growX = source->growX;
+  destination->growY = source->growY;
+}
