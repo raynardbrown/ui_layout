@@ -202,5 +202,12 @@ class RowLayout : public ILayout
     class RowLayoutPrivate;
 
     RowLayoutPrivate * d;
+
+    class Row
+    {
+      private:
+
+        Row();
+    };
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
