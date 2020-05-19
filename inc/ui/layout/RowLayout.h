@@ -209,6 +209,10 @@ class RowLayout : public ILayout
       private:
 
         Row(RowLayout * rowLayout);
+
+      public:
+
+        ~Row();
     }; // end Row class
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
