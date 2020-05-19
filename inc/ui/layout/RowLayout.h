@@ -140,9 +140,6 @@ class RowLayout : public ILayout
                         std::size_t row,
                         UiComponentConstraints * uiComponentConstraints);
 
-    void setHorizontalSpaceBetweenUiComponents(std::size_t row,
-                                               std::size_t horizontalSpace);
-
     /**
      * The amount of vertical space in pixels between each row within this
      * RowLayout.
@@ -226,6 +223,8 @@ class RowLayout : public ILayout
         Row * addUiComponent(Label * label,
                              UiComponent* uiComponent,
                              const UiComponentConstraints * uiComponentConstraints);
+
+        void setHorizontalSpaceBetweenUiComponents(std::size_t horizontalSpace);
 
         void removeAllUiComponents();
 
