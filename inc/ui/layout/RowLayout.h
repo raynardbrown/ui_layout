@@ -203,11 +203,13 @@ class RowLayout : public ILayout
 
     RowLayoutPrivate * d;
 
+  public:
+
     class Row
     {
       private:
 
         Row();
-    };
+    }; // end Row class
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
