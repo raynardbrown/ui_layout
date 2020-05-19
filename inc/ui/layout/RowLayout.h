@@ -181,6 +181,8 @@ class RowLayout : public ILayout
 
     RowLayoutPrivate * d;
 
+    friend class RowLayoutPrivate;
+
   public:
 
     class Row
