@@ -104,17 +104,6 @@ class RowLayout : public ILayout
     int getVerticalSpaceBetweenRows() const;
 
     /**
-     * Return the alignment of the specified row. The alignment applies to all
-     * uiComponents within the specified row.
-     *
-     * @param[in] row the row within this row layout whose alignment will be
-     * checked.
-     *
-     * @return the alignment of the specified row.
-     */
-    RowOrientation::Value getRowOrientation(std::size_t row) const;
-
-    /**
      * Add the specified UiComponent to this layout at the specified row.
      *
      * @param[in] uiComponent the UiComponent that will be added to this layout
@@ -222,6 +211,14 @@ class RowLayout : public ILayout
         UiComponent * getUiComponentAt(std::size_t index);
 
         Label * getLabelAt(std::size_t index);
+
+        /**
+         * Return the alignment of this Row. The alignment applies to all
+         * uiComponents within this Row.
+         *
+         * @return the alignment of the specified row.
+         */
+        RowOrientation::Value getRowOrientation() const;
 
         Row * addUiComponent(UiComponent * uiComponent,
                              const UiComponentConstraints * uiComponentConstraints);
