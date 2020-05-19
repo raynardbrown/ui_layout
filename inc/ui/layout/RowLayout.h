@@ -213,6 +213,31 @@ class RowLayout : public ILayout
       public:
 
         ~Row();
+
+        // Note: Although UiComponents and their associated labels are individual
+        //       UiComponents, for the sake of this structure, they are treated
+        //       as "one" UiComponent and share an index.
+        std::size_t getUiComponentCount() const;
+
+        UiComponent * getUiComponentAt(std::size_t index);
+
+        Label * getLabelAt(std::size_t index);
+
+        Row * addUiComponent(UiComponent * uiComponent,
+                             const UiComponentConstraints * uiComponentConstraints);
+
+        Row * addUiComponent(Label * label,
+                             UiComponent* uiComponent,
+                             const UiComponentConstraints * uiComponentConstraints);
+
+        void removeAllUiComponents();
+
+        void removeUiComponentAt(std::size_t index);
+
+      private:
+
+        class RowPrivate;
+        RowPrivate * d;
     }; // end Row class
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
