@@ -28,6 +28,10 @@ class RowLayout : public ILayout
 {
   public:
 
+    // Forward declare the inner class Row so functions within this class
+    // declaration can use Row before it is completely declared.
+    class Row;
+
     /**
      * Create a new RowLayout.
      *
@@ -104,6 +108,20 @@ class RowLayout : public ILayout
     int getVerticalSpaceBetweenRows() const;
 
     /**
+     * Add a new Row to this RowLayout making the newly added Row, the
+     * current row. Subsequent calls to addUiComponent, will add a UiComponent
+     * to this newly added Row.
+     *
+     * @return a new Row within this RowLayout.
+     */
+    Row * addRow();
+
+    /**
+     * Add the specified UiComponent to this layout at the specified row.
+     *
+     * @param[in] uiComponent the UiComponent that will be added to this layout
+     * at the specified row.
+     *
      * Add the specified UiComponent to this layout at the specified row.
      *
      * @param[in] uiComponent the UiComponent that will be added to this layout
