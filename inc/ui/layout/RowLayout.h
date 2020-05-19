@@ -208,7 +208,7 @@ class RowLayout : public ILayout
     {
       private:
 
-        Row();
+        Row(RowLayout * rowLayout);
     }; // end Row class
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
