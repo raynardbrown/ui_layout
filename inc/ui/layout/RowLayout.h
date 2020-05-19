@@ -122,20 +122,11 @@ class RowLayout : public ILayout
      * @param[in] uiComponent the UiComponent that will be added to this layout
      * at the specified row.
      *
-     * Add the specified UiComponent to this layout at the specified row.
-     *
-     * @param[in] uiComponent the UiComponent that will be added to this layout
-     * at the specified row.
-     *
-     * @param[in] row the row in this layout where the specified UiComponent
-     * will be added.
-     *
      * @param[in] uiComponentConstraints the constraints to which the specified
      * UiComponent is bound.
      */
-    void addUiComponent(UiComponent * uiComponent,
-                        std::size_t row,
-                        UiComponentConstraints * uiComponentConstraints);
+    Row * addUiComponent(UiComponent * uiComponent,
+                         UiComponentConstraints * uiComponentConstraints);
 
     /**
      * Add the specified UiComponent and its associated label to this layout at
@@ -147,16 +138,12 @@ class RowLayout : public ILayout
      * @param[in] uiComponent the UiComponent that will be added to this layout
      * at the specified row.
      *
-     * @param[in] row the row where the specified UiComponent and its associated
-     * label will be added to this layout.
-     *
      * @param[in] uiComponentConstraints the constraints to which the specified
      * UiComponent and its associated label are bound.
      */
-    void addUiComponent(Label * label,
-                        UiComponent * uiComponent,
-                        std::size_t row,
-                        UiComponentConstraints * uiComponentConstraints);
+    Row * addUiComponent(Label * label,
+                         UiComponent * uiComponent,
+                         UiComponentConstraints * uiComponentConstraints);
 
     /**
      * The amount of vertical space in pixels between each row within this
