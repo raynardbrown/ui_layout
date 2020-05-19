@@ -22,6 +22,7 @@
 class UiComponent;
 class Label;
 struct UiComponentConstraints;
+class RowLayoutPrivate;
 
 class RowLayout : public ILayout
 {
@@ -198,8 +199,6 @@ class RowLayout : public ILayout
     virtual void executeLayout(UiComponent * uiComponent);
 
   private:
-
-    class RowLayoutPrivate;
 
     RowLayoutPrivate * d;
 
