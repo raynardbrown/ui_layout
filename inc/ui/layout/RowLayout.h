@@ -154,18 +154,6 @@ class RowLayout : public ILayout
     void setVerticalSpaceBetweenRows(int verticalSpace);
 
     /**
-     * Set the orientation of the specified row to the specified orientation.
-     * The specified orientation is applied to all uiComponents within the
-     * specified row.
-     *
-     * @param[in] row the row whose orientation will be changed.
-     *
-     * @param[in] rowOrientation the new orientation of the specified row.
-     */
-    void setRowOrientation(std::size_t row,
-                           RowOrientation::Value rowOrientation);
-
-    /**
      * Remove the specified uiComponent from this layout. If a uiComponent was
      * added with a label using
      * RowLayout::(Label *, UiComponent *, std::size_t, UiComponentConstraints *)
@@ -225,6 +213,15 @@ class RowLayout : public ILayout
                              const UiComponentConstraints * uiComponentConstraints);
 
         void setHorizontalSpaceBetweenUiComponents(std::size_t horizontalSpace);
+
+        /**
+         * Set the orientation of this row to the specified orientation.
+         * The specified orientation is applied to all uiComponents within this
+         * row.
+         *
+         * @param[in] rowOrientation the new orientation of this row.
+         */
+        void setRowOrientation(RowOrientation::Value rowOrientation);
 
         void removeAllUiComponents();
 
