@@ -239,6 +239,9 @@ class RowLayout : public ILayout
 
         class RowPrivate;
         RowPrivate * d;
+
+        friend class RowLayout;
+        friend class RowLayoutPrivate;
     }; // end Row class
 };
 #endif /* UI_LAYOUT_ROWLAYOUT_H_ */
