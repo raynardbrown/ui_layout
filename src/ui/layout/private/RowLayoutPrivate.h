@@ -70,6 +70,17 @@ class RowLayoutPrivate
                                  int * yLabelVAlignmentOffset,
                                  int * yUiComponentPeerVAlignmentOffset);
 
+    void layoutAllUiComponentsInRow(RowLayout * thisRowLayout,
+                                    std::size_t rowIndex,
+                                    int * xOffset,
+                                    int * yOffset,
+                                    int * heightOfTallestUiComponentInRow,
+                                    int initialXOffset,
+                                    int * initialYOffset,
+                                    int * containerHeight,
+                                    int * maxRowWidth,
+                                    bool isFirstRow);
+
     void layoutUiComponentInRow(RowLayout * thisRowLayout,
                                 std::size_t rowIndex,
                                 std::size_t uiComponentIndex,
