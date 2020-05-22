@@ -26,7 +26,7 @@ struct UiComponentWrapper;
 enum SizeGroupIdentifier
 {
   LabelGroup,
-  ControlGroup
+  UiComponentGroup
 };
 
 #include "ui/layout/RowLayout.h"
